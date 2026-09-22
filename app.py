@@ -45,35 +45,34 @@ pages = {
         ),
     ],
     "📊 Estimation": [
-        st.Page(
-            "pages/1_📐_Quantity_Takeoff.py",
-            title="Quantity Takeoff",
-            icon="📐",
-        ),
-        st.Page(
-            "pages/2_📋_BOQ.py",
-            title="BOQ",
-            icon="📋",
-        ),
-        st.Page(
-            "pages/3_💰_Market_Rates.py",
-            title="Market Rates",
-            icon="💰",
-        ),
-    ],
-    "🤖 Intelligence": [
-        st.Page(
-            "pages/4_🤖_AI_Assistant.py",
-            title="AI Assistant",
-            icon="🤖",
-        ),
-    ],
-    "⭐ Community": [
-        st.Page(
-            "pages/5_⭐_Reviews.py",
-            title="Reviews & Feedback",
-            icon="⭐",
-        ),
+      st.Page(
+    "pages/1_Quantity_Takeoff.py",
+    title="Quantity Takeoff",
+    icon="📐",
+)
+       st.Page(
+    "pages/2_BOQ.py",
+    title="BOQ",
+    icon="📋",
+)
+
+st.Page(
+    "pages/3_Market_Rates.py",
+    title="Market Rates",
+    icon="💰",
+)
+
+st.Page(
+    "pages/4_AI_Assistant.py",
+    title="AI Assistant",
+    icon="🤖",
+)
+
+st.Page(
+    "pages/5_Reviews.py",
+    title="Reviews",
+    icon="⭐",
+)
     ],
 }
 
