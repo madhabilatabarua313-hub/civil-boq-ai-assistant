@@ -25,7 +25,6 @@ with st.sidebar:
 
     st.divider()
     st.markdown("### Navigation")
-    st.page_link("app.py", label="Dashboard", icon="🏠")
     st.page_link("pages/1_📐_Quantity_Takeoff.py", label="Quantity Takeoff", icon="📐")
     st.page_link("pages/2_📋_BOQ.py", label="BOQ", icon="📋")
     st.page_link("pages/3_💰_Market_Rates.py", label="Market Rates", icon="💰")
