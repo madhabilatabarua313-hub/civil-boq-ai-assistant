@@ -1,9 +1,6 @@
-```python
 import streamlit as st
-
 from db import init_db, get_projects
 from ui import inject_css
-
 
 # ---------------------------------------------------------
 # PAGE CONFIG
