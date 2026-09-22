@@ -1,3 +1,4 @@
+```python
 import streamlit as st
 
 from db import init_db, get_projects
@@ -44,35 +45,37 @@ pages = {
             default=True,
         ),
     ],
+
     "📊 Estimation": [
-      st.Page(
-    "pages/1_Quantity_Takeoff.py",
-    title="Quantity Takeoff",
-    icon="📐",
-)
-       st.Page(
-    "pages/2_BOQ.py",
-    title="BOQ",
-    icon="📋",
-)
+        st.Page(
+            "pages/1_📐_Quantity_Takeoff.py",
+            title="Quantity Takeoff",
+            icon="📐",
+        ),
 
-st.Page(
-    "pages/3_Market_Rates.py",
-    title="Market Rates",
-    icon="💰",
-)
+        st.Page(
+            "pages/2_📋_BOQ.py",
+            title="BOQ",
+            icon="📋",
+        ),
 
-st.Page(
-    "pages/4_AI_Assistant.py",
-    title="AI Assistant",
-    icon="🤖",
-)
+        st.Page(
+            "pages/3_💰_Market_Rates.py",
+            title="Market Rates",
+            icon="💰",
+        ),
 
-st.Page(
-    "pages/5_Reviews.py",
-    title="Reviews",
-    icon="⭐",
-)
+        st.Page(
+            "pages/4_🤖_AI_Assistant.py",
+            title="AI Assistant",
+            icon="🤖",
+        ),
+
+        st.Page(
+            "pages/5_⭐_Reviews.py",
+            title="Reviews",
+            icon="⭐",
+        ),
     ],
 }
 
@@ -117,6 +120,7 @@ with st.sidebar:
     current_project_name = "— Select project —"
 
     if st.session_state.active_project_id:
+
         current_project = next(
             (
                 p
@@ -143,7 +147,8 @@ with st.sidebar:
     if selected_project != "— Select project —":
 
         selected_project_data = next(
-            p for p in projects
+            p
+            for p in projects
             if p["name"] == selected_project
         )
 
@@ -165,6 +170,10 @@ with st.sidebar:
 # ---------------------------------------------------------
 # RUN SELECTED PAGE
 # ---------------------------------------------------------
-pg = st.navigation(pages, position="sidebar")
+pg = st.navigation(
+    pages,
+    position="sidebar",
+)
 
 pg.run()
+```
